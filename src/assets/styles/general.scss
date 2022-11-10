@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import './partials/variables';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: $main_font;
     color: #fff;
 }
 img{
     max-width: 100%;
 }
 .container{
-    max-width: 1170px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 1rem;
 }

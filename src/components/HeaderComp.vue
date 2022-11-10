@@ -88,16 +88,16 @@ header {
         list-style: none;
         display: flex;
         text-transform: uppercase;
+        overflow: hidden;
 
 
         li a {
-            padding: 1rem;
+            margin: 1.3rem;
             display: inline-block;
             color: $black;
             text-decoration: none;
             font-weight: 600;
-            padding-bottom: 2.8rem;
-            padding-top: 2.8rem;
+            padding: 2.7rem 0;
 
 
             &.active,

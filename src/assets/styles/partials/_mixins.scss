@@ -3,3 +3,10 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin merchStyle {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+}
