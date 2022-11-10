@@ -1,16 +1,14 @@
 <template>
     <section>
         <div class="container">
-            CONTENT
-        </div>
 
+        </div>
     </section>
 </template>
 
 <script>
-
 export default {
-    name: 'BodyComp.vue'
+
 }
 </script>
 
@@ -19,7 +17,7 @@ export default {
 @use '../assets/styles/partials/variables' as *;
 
 section {
-    background-color: $black;
-    height: 200px;
+    background-color: $lightblue;
+    min-height: 250px;
 }
 </style>

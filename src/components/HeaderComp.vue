@@ -96,10 +96,14 @@ header {
             color: $black;
             text-decoration: none;
             font-weight: 600;
+            padding-bottom: 2.8rem;
+            padding-top: 2.8rem;
+
 
             &.active,
             &:hover {
                 border-bottom: 5px solid $lightblue;
+                transition: 0.3s;
             }
         }
     }
