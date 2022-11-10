@@ -4,32 +4,32 @@
             <div>
                 <a href="#">
                     <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital">
-                    <span>Digital Comics</span>
                 </a>
+                <span>Digital Comics</span>
             </div>
             <div>
                 <a href="#">
                     <img src="../assets/img/buy-comics-merchandise.png" alt="Merch">
-                    <span>Dc Merchandise</span>
                 </a>
+                <span>Dc Merchandise</span>
             </div>
             <div>
                 <a href="#">
                     <img src="../assets/img/buy-comics-subscriptions.png" alt="Subs">
-                    <span>Subscription</span>
                 </a>
+                <span>Subscription</span>
             </div>
             <div>
                 <a href="#">
                     <img src="../assets/img/buy-comics-shop-locator.png" alt="Shops">
-                    <span>Comic Shop Locator</span>
                 </a>
+                <span>Comic Shop Locator</span>
             </div>
             <div>
                 <a href="#">
                     <img src="../assets/img/buy-dc-power-visa.svg" alt="Visa">
-                    <span>Dc Power Visa</span>
                 </a>
+                <span>Dc Power Visa</span>
             </div>
         </div>
     </section>
@@ -51,22 +51,24 @@ section {
 }
 
 div {
-    padding: 2em;
+    padding: 2em 0.6em;
     @include merchStyle;
 
 
     a {
-        padding: 1.5rem;
         text-decoration: none;
         @include merchStyle;
     }
 }
 
 img {
-    width: 50%;
+    width: 60px;
+    height: 76px;
 }
 
 span {
     padding: 0 1.5rem;
+    cursor: pointer;
+    width: max-content;
 }
 </style>

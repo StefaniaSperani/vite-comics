@@ -32,7 +32,7 @@ section {
     height: 7rem;
 
     .container {
-        min-height: 100%;
+        height: 100%;
         padding: 2em;
         display: flex;
         justify-content: space-between;
