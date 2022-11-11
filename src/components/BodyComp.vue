@@ -3,9 +3,11 @@
         <div class="container">
             <div class="row">
                 <div class="col" v-for="(serie, index) in seriesArray" :key="index">
-                    <img :src="serie.thumb" alt="">
+                    <img :src="serie.thumb" :alt="serie.series" class="thumb">
                     <p>{{ serie.series }}</p>
+                    <!-- <p class="price">{{ serie.price }}</p> -->
                 </div>
+
             </div>
         </div>
 
@@ -38,23 +40,33 @@ section {
 }
 
 .row {
-    @include dflex;
+    display: flex;
+    justify-content: space-between;
     flex-flow: row wrap;
     padding: 0.5em;
-    gap: 5px;
 
     .col {
         width: calc(100% / 6);
+        padding: 0.7em;
     }
 
     img {
-        width: 130px;
-        height: 130px;
+        width: 190px;
+        height: 190px;
         object-fit: cover;
     }
 
+    .thumb {
+        object-position: 0% 0%;
+    }
+
     p {
-        padding: 1em 0;
+        padding: 0.5em 0;
+        text-transform: uppercase;
+    }
+
+    .price {
+        color: $lightblue;
     }
 }
 </style>
