@@ -1,8 +1,8 @@
 <template>
     <div class="jumbo">
-        <!-- IMG JUMBO -->
+        <button class="series">Current Series</button>
     </div>
-    <button class="series">Current Series</button>
+
 </template>
 
 <script>
@@ -30,7 +30,7 @@ export default {
     border: none;
     font-size: 1.2em;
     position: absolute;
-    bottom: 70px;
+    bottom: -25px;
     left: 300px;
 }
 </style>

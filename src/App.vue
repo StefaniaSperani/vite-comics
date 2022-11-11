@@ -5,6 +5,7 @@ import FooterComp from './components/FooterComp.vue';
 import Footer2Comp from './components/Footer2Comp.vue';
 import MerchComp from './components/MerchComp.vue';
 import JumboComp from './components/JumboComp.vue';
+
 export default {
   components: {
     HeaderComp,

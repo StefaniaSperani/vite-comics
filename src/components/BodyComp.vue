@@ -1,16 +1,29 @@
 <template>
     <section>
         <div class="container">
-            CONTENT
+            <div class="row">
+                <div class="col">
+                    <img src="../assets/img/dc-logo.png" alt="">
+                    <p>Action comics</p>
+                </div>
+            </div>
         </div>
 
     </section>
 </template>
 
 <script>
-
+import { seriesList } from '../data/series'
 export default {
-    name: 'BodyComp.vue'
+    name: 'BodyComp.vue',
+    data() {
+        return {
+            seriesArray: seriesList,
+        }
+    },
+    mounted() {
+        console.log(this.seriesArray);
+    }
 }
 </script>
 
@@ -20,6 +33,16 @@ export default {
 
 section {
     background-color: $black;
-    height: 200px;
+    min-height: 200px;
+}
+
+.row {
+    @include dflex;
+    flex-flow: row wrap;
+
+    .col {
+        width: calc(100% / 6);
+        padding: 2rem;
+    }
 }
 </style>
