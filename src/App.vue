@@ -4,13 +4,15 @@ import BodyComp from './components/BodyComp.vue';
 import FooterComp from './components/FooterComp.vue';
 import Footer2Comp from './components/Footer2Comp.vue';
 import MerchComp from './components/MerchComp.vue';
+import JumboComp from './components/JumboComp.vue';
 export default {
   components: {
     HeaderComp,
     BodyComp,
     FooterComp,
     Footer2Comp,
-    MerchComp
+    MerchComp,
+    JumboComp
   }
 }
 </script>
@@ -18,6 +20,7 @@ export default {
 <template>
   <HeaderComp />
   <main>
+    <JumboComp />
     <BodyComp />
     <MerchComp />
   </main>

@@ -7,12 +7,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.41",
-    "segoe-fonts": "^1.0.1"
+    "bootstrap": "^5.2.2",
+    "segoe-fonts": "^1.0.1",
+    "vue": "^3.2.41"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.2",
-    "sass": "^1.56.1",
+    "sass": "^1.54.9",
     "vite": "^3.1.8"
   }
 }

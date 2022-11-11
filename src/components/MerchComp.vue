@@ -47,7 +47,7 @@ export default {
 
 section {
     background-color: $lightblue;
-    min-height: 250px;
+    min-height: 200px;
 }
 
 div {
