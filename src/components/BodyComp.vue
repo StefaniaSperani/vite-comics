@@ -2,9 +2,9 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <img src="../assets/img/dc-logo.png" alt="">
-                    <p>Action comics</p>
+                <div class="col" v-for="(serie, index) in seriesArray" :key="index">
+                    <img :src="serie.thumb" alt="">
+                    <p>{{ serie.series }}</p>
                 </div>
             </div>
         </div>
@@ -20,9 +20,6 @@ export default {
         return {
             seriesArray: seriesList,
         }
-    },
-    mounted() {
-        console.log(this.seriesArray);
     }
 }
 </script>
@@ -36,13 +33,28 @@ section {
     min-height: 200px;
 }
 
+.container {
+    padding: 2em 0
+}
+
 .row {
     @include dflex;
     flex-flow: row wrap;
+    padding: 0.5em;
+    gap: 5px;
 
     .col {
         width: calc(100% / 6);
-        padding: 2rem;
+    }
+
+    img {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+    }
+
+    p {
+        padding: 1em 0;
     }
 }
 </style>
